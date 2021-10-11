@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv='refresh' content='20' >
+        <title>Weather App</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='sun.ico') }}">
+    </head>
+    <body>
+        <H3>Server is up and ready to receive</H3>
+
+        {% for i in range ( data|length ) %}
+            <b> {{ data[i] }} <br></b>
+        {% endfor %}
+
+    </body>
+</html>

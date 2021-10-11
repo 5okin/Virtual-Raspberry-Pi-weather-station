@@ -1,0 +1,57 @@
+version: '3.4'
+
+services:
+
+  weather_station_server:
+    container_name: "weather_server"
+    environment:
+      TZ: Europe/Athens
+    build: .
+    environment:
+      MAILUSER: ${MailUser}
+      MAILPASS: ${MailPass}
+      INFLUXDB_DATABASE: ${InfluxDatabaseName}
+      INFLUXDB_USERNAME: ${InfluxUser}
+      INFLUXDB_PASSWORD: ${InfluxUserPass}
+    depends_on:
+      - influxdb
+    ports:
+      - 5000:80
+
+  grafana:
+    container_name: "grafana"
+    image: grafana/grafana:latest
+    depends_on:
+      - influxdb
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_USERNAME}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD}
+      INFLUXDB_DATABASE: ${InfluxDatabaseName}
+      INFLUXDB_USERNAME: ${InfluxUser}
+      INFLUXDB_PASSWORD: ${InfluxUserPass}
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana-provisioning/:/etc/grafana/provisioning
+      - grafanadata:/var/lib/grafana
+
+  influxdb:
+    environment:
+      INFLUXDB_DB: ${InfluxDatabaseName}
+      INFLUXDB_ADMIN_USER: ${InfluxAdminUser}
+      INFLUXDB_ADMIN_PASSWORD: ${InfluxAdminPass}
+      INFLUXDB_HTTP_AUTH_ENABLED: "true"
+      INFLUXDB_USER: ${InfluxUser}
+      INFLUXDB_USER_PASSWORD: ${InfluxUserPass}
+    container_name: "influxdb"
+    image: influxdb:latest
+    #ports:
+    #  - 8086:8086
+    volumes:
+      - influxdata:/var/lib/influxdb
+
+volumes:
+  influxdata:
+    driver: local
+  grafanadata:
+    driver: local

@@ -1,0 +1,35 @@
+[
+    {"temperature": 17.4, "air-humidity": 72, "ground-humidity": 70, "windspeed": 8, "time": ""}, 
+    {"temperature": 19.8, "air-humidity": 70, "ground-humidity": 69, "windspeed": 7, "time": ""}, 
+    {"temperature": 19.4, "air-humidity": 71, "ground-humidity": 65, "windspeed": 7, "time": ""}, 
+    {"temperature": 18.0, "air-humidity": 64, "ground-humidity": 63, "windspeed": 7, "time": ""}, 
+    {"temperature": 17.9, "air-humidity": 65, "ground-humidity": 62, "windspeed": 8, "time": ""}, 
+
+    {"temperature": 16.5, "air-humidity": 64, "ground-humidity": 60, "windspeed": 8, "time": ""},
+    {"temperature": 16.7, "air-humidity": 62, "ground-humidity": 61, "windspeed": 8, "time": ""},
+    {"temperature": 16.9, "air-humidity": 60, "ground-humidity": 58, "windspeed": 8, "time": ""},
+    {"temperature": 17.5, "air-humidity": 61, "ground-humidity": 58, "windspeed": 8, "time": ""},
+    {"temperature": 17.7, "air-humidity": 59, "ground-humidity": 57, "windspeed": 8, "time": ""},
+    {"temperature": 17.9, "air-humidity": 59, "ground-humidity": 63, "windspeed": 8, "time": ""},
+    {"temperature": 18.5, "air-humidity": 59, "ground-humidity": 64, "windspeed": 8, "time": ""},
+    {"temperature": 18.6, "air-humidity": 60, "ground-humidity": 60, "windspeed": 8, "time": ""},
+    {"temperature": 19.0, "air-humidity": 61, "ground-humidity": 58, "windspeed": 8, "time": ""},
+    {"temperature": 19.1, "air-humidity": 65, "ground-humidity": 66, "windspeed": 8, "time": ""},
+
+    {"temperature": 20.0, "air-humidity": 65, "ground-humidity": 66, "windspeed": 0, "time": ""},
+    {"temperature": 21.3, "air-humidity": 71, "ground-humidity": 68, "windspeed": 9, "time": ""}, 
+    {"temperature": 32.9, "air-humidity": 79, "ground-humidity": 64, "windspeed": 6, "time": ""}, 
+    {"temperature": 23.7, "air-humidity": 47, "ground-humidity": 60, "windspeed": 6, "time": ""}, 
+    {"temperature": 24.9, "air-humidity": 82, "ground-humidity": 69, "windspeed": 1, "time": ""}, 
+    {"temperature": 25.4, "air-humidity": 82, "ground-humidity": 67, "windspeed": 5, "time": ""}, 
+    {"temperature": 26.7, "air-humidity": 32, "ground-humidity": 68, "windspeed": 4, "time": ""},
+    
+    {"temperature": 34.9, "air-humidity": 84, "ground-humidity": 63, "windspeed": 7, "time": ""}, 
+    {"temperature": 31.3, "air-humidity": 82, "ground-humidity": 68, "windspeed": 5, "time": ""}, 
+    {"temperature": 42.1, "air-humidity": 54, "ground-humidity": 67, "windspeed": 1, "time": ""}, 
+    {"temperature": 35.7, "air-humidity": 58, "ground-humidity": 64, "windspeed": 8, "time": ""}, 
+    {"temperature": 42.6, "air-humidity": 42, "ground-humidity": 61, "windspeed": 7, "time": ""}, 
+    {"temperature": 42.6, "air-humidity": 86, "ground-humidity": 69, "windspeed": 1, "time": ""}, 
+    {"temperature": 38.9, "air-humidity": 57, "ground-humidity": 65, "windspeed": 7, "time": ""}, 
+    {"temperature": 36.9, "air-humidity": 54, "ground-humidity": 60, "windspeed": 1, "time": ""}
+]

@@ -1,0 +1,11 @@
+apiVersion: 1
+datasources:
+  - name: 'Rpi_EnvSensor_Data'
+    type: influxdb
+    access: proxy
+    database: ${INFLUXDB_DATABASE}
+    user: ${INFLUXDB_USERNAME}
+    password: ${INFLUXDB_PASSWORD}
+    url: http://influxdb:8086
+    isDefault: true
+    editable: true

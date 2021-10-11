@@ -1,0 +1,9 @@
+apiVersion: 1
+providers:
+- name: Rpi_EnvSensor_Data
+  folder: ''
+  type: file
+  disableDeletion: false
+  editable: true
+  options:
+    path: /etc/grafana/provisioning/dashboards
